@@ -2,7 +2,7 @@
 /**
  * main - file 
  *application daffichage 
- * Return  le resultat est 0
+ * Return:  le resultat est vrai
  */
 int main(void)
 {
