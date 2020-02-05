@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * Return est le  resultat 0 
- * */
+ * main - Entry point
+ *
+ * Return: Always 0 (vrai )
+ */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art");
