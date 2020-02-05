@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * Return: result is 0 
+ * main - Entry point
+ *
+ * Return: Always 0 (vrai)
  */
 int main(void)
 {
