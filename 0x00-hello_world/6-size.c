@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - file 
- *application daffichage 
- * Return:  le resultat est vrai
+ * main - Entry point
+ *
+ * Return: retour 0 (vrai )
  */
 int main(void)
 {
