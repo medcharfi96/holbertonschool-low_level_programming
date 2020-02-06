@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 /**
  * main - show all number under 100
  * using only putchar
