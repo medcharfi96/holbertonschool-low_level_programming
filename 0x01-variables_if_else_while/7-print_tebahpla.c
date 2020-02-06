@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - show alphabet in invert mode from z to a 
- * using anly putchar 
+ * main - show alphabet in invert mode from z to a
+ * using anly putchar
  * Return:if 0 (mean true)
  */
 int main(void)
