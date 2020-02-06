@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main help to get last number .
+ * main - help to get last number .
  * Return: 0 mean always true
  **/
 int main(void)
