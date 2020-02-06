@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-char chara;
-for (chara = 'a'; chara <= 'z'; chara++)
-{
-if (chara == 'q' && chara == 'e')
-{
-chara++;
-}
-else 
-putchar(chara);
-}
-putchar('\n');
-return (0);
+	char chara;
+
+	for (chara = 'a'; chara <= 'z'; chara++)
+	{
+		if (chara == 'q' ||  chara == 'e')
+		{
+			chara++;
+		}
+		else 
+			putchar(chara);
+	}
+	putchar('\n');
+	return (0);
 }
