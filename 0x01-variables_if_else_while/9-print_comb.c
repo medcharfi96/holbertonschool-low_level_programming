@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - show all the number <10 
+ * main - show all the number <10
  * using only putchar
  * Return: if  0 (mean true)
  */
