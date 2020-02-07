@@ -13,12 +13,17 @@ int main(void)
 		if (n < 10 )
 		{
 			for (x = 0 ; x < 10 ;x++)
-			{
-				putchar(n + '0');
-				putchar(x + '0');
-				putchar(',');
-				putchar(' ');
-			}
+			{ 
+				if (n != 9 && x != 9) {
+					putchar(n + '0');
+					putchar(x + '0');
+					putchar(',');
+					putchar(' ');
+				}
+				else 
+				{ putchar(n+ '0');
+					putchar (x+ '0');
+				}	}
 		}
 	}
 	putchar('\n');
