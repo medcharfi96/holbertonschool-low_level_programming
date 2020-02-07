@@ -6,25 +6,17 @@
  */
 int main(void)
 {
-	int n,x;
+	int i;
 
-	for (n = 0 ; n < 100 ; n++)
+	for (i = 0; i <= 99; i++)
+
 	{
-		if (n < 10 )
-		{
-			for (x = 0 ; x < 10 ;x++)
-			{
-				if (n == 9 && x == 9) {
-							     putchar(n+ '0');
-					putchar (x+ '0');
-				}
-				else
-				{putchar(n + '0');
-					putchar(x + '0');
-					putchar(',');
-					putchar(' ');
-
-				}	}
+		putchar(i / 10 + '0');
+		putchar(i % 10 + '0');
+		if (i < 99)
+		{ 
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
