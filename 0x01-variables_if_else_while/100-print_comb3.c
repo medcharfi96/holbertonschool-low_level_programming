@@ -7,6 +7,7 @@
 int main(void)
 {
 	int fl, sl;
+
 	for (fl = 0; fl < 9; fl++)
 	{
 		for (sl = fl + 1; sl < 10; sl++)
