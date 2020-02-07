@@ -1,16 +1,16 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
-* main - mainfonc  
-*auditeur medcharfi96
-* Return: if 0 (mean  true) 
+* main - mainfonc
+* auditeur medcharfi96
+* Return: if 0 (mean  true)
 */
-int main(void) {
-
-	int fl, sl; 
-	for (fl = 0; fl < 9; fl++) {
-	
-	for (sl = fln; sl < 10; sl++) {
-
+int main(void) 
+{
+	int fl, sl;
+	for (fl = 0; fl < 9; fl++) 
+{
+	for (sl = fln; sl < 10; sl++) 
+{
 			putchar(fl + '0');
 			putchar(sl + '0');
 			if (fl < 9)
@@ -19,7 +19,7 @@ int main(void) {
 				putchar(' ');
 			}
 		}
-	} 
-	putchar('\n'); 
+	}
+	putchar('\n');
 return (0);
 }
