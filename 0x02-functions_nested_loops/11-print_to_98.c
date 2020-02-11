@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
 * print_to_98 - fct of showing
@@ -20,6 +19,7 @@ printf("%d", x);
 else
 printf("%d, ", x);
 }
+printf("\n");
 else
 {
 for (x = n; x >= 98; x--)
@@ -29,5 +29,6 @@ printf("%d", x);
 else
 printf("%d, ", x);
 }
+printf("\n");
 }
 }
