@@ -6,31 +6,32 @@
 */
 void times_table(void)
 {
-int x, y;
+int x; 
+int y;
 for (x = 0; x < 10; x++)
 {
 for (y = 0; y < 10; y++)
 {
 if ((x * y) / 10 == 0)
 {
-putchar(' ');
-putchar(' ');
-putchar((x % 10) * (y % 10) + '0');
-putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar((x % 10) * (y % 10) + '0');
+_putchar(',');
 }
 else if (x * y == 81)
 {
-putchar(' ');
-putchar((x % 10) * (y % 10) + '0');
+_putchar(' ');
+_putchar((x % 10) * (y % 10) + '0');
 }
 else
 {
-putchar(' ');
-putchar(' ');
-putchar((x % 10) * (y % 10) + '0');
-putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar((x % 10) * (y % 10) + '0');
+_putchar(',');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }
