@@ -8,6 +8,7 @@ void times_table(void)
 {
 	int x;
 	int y;
+
 	for (x = 0; x < 10; x++)
 	{
 		for (y = 0; y < 10; y++)
@@ -20,8 +21,7 @@ void times_table(void)
 				if (y != 9)
 				{
 				_putchar(',');
-				}			
-				
+				}
 			}
 			else if (x * y == 81)
 			{
@@ -29,11 +29,11 @@ void times_table(void)
 				_putchar((x * y) / 10 + '0');
 				_putchar((x * y) % 10 + '0');
 			}
-			else 
+			else
 			{
 				_putchar(' ');
-				_putchar((x * y) / 10 +'0');
-				_putchar((x * y) % 10 +'0');
+				_putchar((x * y) / 10 + '0');
+				_putchar((x * y) % 10 + '0');
 				if (y != 9)
 				{
 				_putchar(',');
