@@ -4,7 +4,8 @@
 * Return: 0 (mean true)
 *
 **/
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
+{
 char x;
 int a;
 for (a = 0; a < 10; a++)
