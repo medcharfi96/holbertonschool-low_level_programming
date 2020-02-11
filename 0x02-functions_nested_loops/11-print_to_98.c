@@ -7,7 +7,7 @@
 */
 void print_to_98(int n)
 {
-int i;
+int x;
 if (n == 98)
 {
 printf("98\n");
