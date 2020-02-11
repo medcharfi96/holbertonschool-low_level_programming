@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
 *_isalpha -show if is an aplhabet or noo.
-* @c :variable pour test
-* Return : 1 (mean alhpa)
+* @c :variable pour test.
+* Return: 1 (mean true )
 **/
 int _isalpha(int c)
 {
