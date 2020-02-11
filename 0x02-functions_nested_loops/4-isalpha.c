@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* main -show the world holberton followed by enter.
+*_isalpha -show if is an aplhabet or noo.
 * @c :variable pour test
 * Return : 1 (mean alhpa)
 **/
