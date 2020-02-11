@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
-* main -show the world holberton followed by enter.  
-* Return: 0 (mean true)  
+* main -show the world holberton followed by enter.
+* Return: 0 (mean true)
 *
 **/
-int print_alphabet (void) 
+int main(void)
 {
- char x='a';
- for (x='a' ; a<= 'z' ; x++)
- {     
-_putchar(x); 
-} 
-_putchar('\n');
- return 0; 
+char x;
+for (x = 'a'; x <= 'z'; x++)
+{
+putchar(x);
+}
+putchar('\n');
+return (0);
 }
