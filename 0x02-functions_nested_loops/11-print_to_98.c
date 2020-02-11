@@ -1,9 +1,9 @@
-#include "holberton.h" 
-#include <stdio.h> 
-/** 
-* print_to_98 - fct of showing 
-* @n: variable locale
-* Return: nothing 
+#include "holberton.h"
+#include <stdio.h>
+/**
+* print_to_98 - fct of showing
+*@n: variable locale
+* Return: nothing
 */
 void print_to_98(int n)
 {
