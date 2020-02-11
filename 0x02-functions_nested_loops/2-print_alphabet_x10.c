@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
 * print_alphabet_x10 -show the alphabet 10 time.
 * Return: 0 (mean true)
