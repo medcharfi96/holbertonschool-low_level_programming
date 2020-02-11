@@ -11,23 +11,23 @@ for (x = 0; x < 10; x++)
 {
 for (y = 0; y < 10; y++)
 {
-if ((x*y)/10==0)
+if ((x * y) / 10 == 0)
 {
 putchar(' ');
 putchar(' ');
-putchar((x % 10)*(y % 10) + '0');
+putchar((x % 10) * (y % 10) + '0');
 putchar(',');
 }
-else if (x*y==81)
+else if (x * y == 81)
 {
 putchar(' ');
-putchar((x % 10)*(y % 10) + '0');
+putchar((x % 10) * (y % 10) + '0');
 }
 else
 {
 putchar(' ');
 putchar(' ');
-putchar((x % 10)*(y % 10) + '0');
+putchar((x % 10) * (y % 10) + '0');
 putchar(',');
 }
 }
