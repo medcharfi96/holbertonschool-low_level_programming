@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*add - give the absulut value 
+*add - give the absulut value
 *@x : la variable locale
 *@y :variable locale
 * Return: if  0 (mean true )
