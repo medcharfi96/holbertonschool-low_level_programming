@@ -4,13 +4,12 @@
 * Return: 0 (mean true)
 *
 **/
-int main(void)
+void print_alphabet (void)
 {
 char x;
 for (x = 'a'; x <= 'z'; x++)
 {
-putchar(x);
+_putchar(x);
 }
-putchar('\n');
-return (0);
+_putchar('\n');
 }
