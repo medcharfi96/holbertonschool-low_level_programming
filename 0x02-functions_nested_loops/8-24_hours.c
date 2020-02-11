@@ -14,6 +14,7 @@ for (x = 0; x < 24; x++)
  _putchar(x / 10 + '0');
  _putchar(x % 10 + '0'); 
 _putchar(':');
+_putchar ( y / 10 + '0');
 _putchar(y % 10 + '0');
 _putchar('\n');
  }
