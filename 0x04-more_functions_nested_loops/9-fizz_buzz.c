@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * fizz_buzz - show all numbers from 1  to 100  without multiple of 3  and  5.
+ * main - show all numbers from 1  to 100  without multiple of 3  and  5.
  *
  * Return: nothing
 */
