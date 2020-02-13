@@ -2,8 +2,8 @@
 
 /**
 * print_triangle - show a trinagle .
-* @size : int 
-* Return: 0 (mean true ).
+* @size : int
+* Return: 0 (mean true).
 */
 
 void print_triangle(int size)
