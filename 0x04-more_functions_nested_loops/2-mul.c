@@ -4,10 +4,10 @@
  * mul - multiplaying two int
  * @a : int.
  * @b : int.
- * Return:  0 (mean true).
+ * Return: nteger 
  */
 int mul(int a, int b);
 {
-return (a * b);
+return ((a * b));
 }
 
