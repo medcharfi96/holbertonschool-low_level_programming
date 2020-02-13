@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * print_line - shw symbole.
+ * print_diagonal - shw symbole.
  * @n : variable de recurance
  * Return: nothing.
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 int i;
 int x;
@@ -19,7 +19,6 @@ _putchar(' ');
 }
 _putchar('\\');
 _putchar('\n');
-}
 }
 }
 _putchar('\n');
