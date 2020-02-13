@@ -1,14 +1,13 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * main - show all numbers from 1  to 100  without multiple of 3  and  5.
- *
- * Return: nothing
+ * main - show all numbers from 1  to 100  without multiple of 3  and  *
+ * Return: 0 (mean true)
 */
 int main(void)
 {
 int i;
-for (i = 1; i <= 100; i++)
+for (i = 1; i <= 99; i++)
 {
 if (i % 3 == 0 || i % 5 == 0)
 {
@@ -32,5 +31,6 @@ else
 printf("%d", i);
 printf(" ");
 }
-_putchar('\n');
+printf("Buzz\n");
+return (0);
 }
