@@ -2,7 +2,7 @@
 
 /**
  * fizz_buzz - show all numbers from 1  to 100  without multiple of 3  and  5.
- * 
+ *
  * Return: nothing
 */
 void fizz_buzz(void)
@@ -28,8 +28,8 @@ printf("Buzz");
 printf(" ");
 }
 }
-else 
-printf("%d",i);
+else
+printf("%d", i);
 printf(" ");
 }
 _putchar('\n');
