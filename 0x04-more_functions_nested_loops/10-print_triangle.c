@@ -16,7 +16,7 @@ for (i = 0 ; i < size ; i++)
 {
 for (j = 0 ; j < size ; j++)
 {
-if (y < size - x )
+if (j < size - i - 1)
 {
 _putchar(' ');
 }
