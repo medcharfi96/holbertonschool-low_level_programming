@@ -13,5 +13,5 @@ for (a = 0; a < 10; a++)
 if (a != 0 && a != 4)
 _putchar(a + '0');
 }
-_putcahr('\n');
+_putchar('\n');
 }
