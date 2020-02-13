@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_line - check the code for Holberton School students.
+ * print_line - shw symbole.
  * @n : variable de recurance
  * Return: nothing.
  */
@@ -15,5 +15,5 @@ for (i = 0; i < n - 1; i++)
 _putchar(' ')
 }
 }
-_putchar('/n');
+_putchar('\n');
 }

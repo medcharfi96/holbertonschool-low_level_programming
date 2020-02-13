@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_line - check the code for Holberton School students.
+ * print_line - print symbole n time.
  * @n : variable de recurance
  * Return: nothing.
  */
@@ -12,5 +12,5 @@ for (i = 0; i < n; i++)
 {
 _putchar('_')
 }
-_putchar('/n');
+_putchar('\n');
 }

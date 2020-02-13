@@ -19,5 +19,5 @@ else
 _putchar(a + '0');
 }
 }
-_putcahr('/n');
+_putcahr('\n');
 }
