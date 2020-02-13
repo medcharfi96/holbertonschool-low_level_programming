@@ -3,7 +3,7 @@
 /**
  * print_numbers - show all numbers.
  *
- * Return: 1 (mean true).
+ * Return: nothing (mean true).
  */
 void print_numbers(void)
 {
