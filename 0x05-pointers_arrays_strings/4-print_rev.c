@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <String.h>
 /**
  * print_rev - show inversing text
  * @s : char
@@ -15,6 +14,6 @@ while (s[x] != '\n')
 x++;
 }
 for (y = x - 1; y >= 0; y--)
-_putchar(s[y]);
+_putchar(*(s[y]));
 _putchar('\n');
 }
