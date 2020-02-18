@@ -11,11 +11,13 @@ int l = 0;
 char a;
 
 while (s[l] != '\0')
+{
 l = l + 1;
+}
 for (i = 0; i < l / 2; i++)
 {
 a = s[i];
-s[i] = s[l - i];
-s[l - i] = a;
+s[i] = s[l - i - 1];
+s[l - i - 1] = a;
 }
 }
