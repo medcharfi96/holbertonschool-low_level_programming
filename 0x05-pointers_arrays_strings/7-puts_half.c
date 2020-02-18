@@ -20,6 +20,7 @@ for (i = z / 2 ; i < z; i++)
 {
 _putchar(str[i]);
 }
+}
 else
 {
 z = ((z - 1) / 2);
