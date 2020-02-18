@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <String.h>
 /**
  * print_rev - show inversing text
  * @s : char
