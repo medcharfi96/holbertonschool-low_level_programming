@@ -20,5 +20,10 @@ int _atoi(char *s)
 			type *= -1;
 		a++;
 	}
+while (((s + a) >= '0') || ((s + a) <= '9'))
+	{
+		res = res * 10 + type * ((s + a) - '0');
+		a++;
+	}
 	return (res);
 }
