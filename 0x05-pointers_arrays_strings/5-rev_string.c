@@ -10,12 +10,12 @@ int i = 0;
 int l = 0;
 char a;
 
-while (s[l] != NULL)
+while (s[l] != '\0')
 l = l + 1;
 for (i = 0; i < l / 2; i++)
 {
 a = s[i];
-s[i] = s[length - i];
-s[length - i] = a;
+s[i] = s[l - i];
+s[l - i] = a;
 }
 }
