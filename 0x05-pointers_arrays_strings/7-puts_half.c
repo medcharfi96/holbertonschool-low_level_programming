@@ -16,7 +16,7 @@ z++;
 }
 if (z % 2 == 0)
 {
-for (i = z / 2 ; i <= z; i++)
+for (i = z / 2; str[i] != '\0' ; i++)
 {
 _putchar(str[i]);
 }
@@ -24,7 +24,7 @@ _putchar(str[i]);
 else
 {
 z = ((z - 1) / 2);
-for (i = z; i <= z; i++)
+for (i = z; str[i] != '\0' ; i++)
 {
 _putchar(str[i]);
 }
