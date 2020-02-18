@@ -19,7 +19,7 @@ int _atoi(char *s)
 		if (*(s + a) == '-')
 		{
 			type = type * (-1);
-		}		
+		}
 		a++;
 	}
 	while ((*(s + a) >= '0') && (*(s + a) <= '9'))
