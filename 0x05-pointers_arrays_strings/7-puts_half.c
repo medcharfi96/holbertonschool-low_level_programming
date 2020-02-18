@@ -24,7 +24,7 @@ _putchar(str[i]);
 }
 else
 {
-z = ((z - 1) / 2);
+z = ((z + 1) / 2);
 for (i = z; str[i] != '\0' ; i++)
 {
 if (i < z)
