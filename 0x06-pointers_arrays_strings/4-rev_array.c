@@ -1,4 +1,4 @@
-nclude "holberton.h"
+#include "holberton.h"
 /**
  * reverse_array - copies a string.
  * @src: string
