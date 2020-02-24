@@ -1,39 +1,26 @@
-nt i =0;
-int j = 0;
-int v;
-unsigned int k;
-int tr = 1;
-char x [500];
-for (int v = 0; *(accept+v) != '\0' ; v++)
- {
-   x[v]= accept [v];
-   }
-    while (*(accept+i) != '\0')
+#include "holberton.h"
+
+/**
+ *  _strspn - check the code for Holberton School students.
+ * @s: char
+ * @accept: char
+ * Return: Always 0.
+ */
+unsigned int _strspn(char *s, char *accept)
 {
-       for ( v = 0 ; x[v] != '\0'; v++) 
-    
-        {
-        if  (accept[i]== x[v])
-        { 
-            tr =0;
-        }
-        }
-    if  (tr ==1)
-    {
-        for (j = 0;*(s+j) != '\0';j++)
-            {
-            if (s[j]==accept[i])
-     {
-         k++;
-     }
-                
-            }
-    }
-     else
-     {
-    i++;
-        }
-}   
+int i, j;
+unsigned int res;
+
+i = 0;
+j = 0;
+res = 0;
+for (i = 0; s[i] != '\0'; i++)
+{
+for (j = 0; accept[j]; j++)
+{
+if (accept[j] == s[i]
+res++;
 }
-return(k);
+}
+return (res);
 }
