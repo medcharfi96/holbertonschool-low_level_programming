@@ -17,18 +17,17 @@ for (i = 0; haystack[i] != '\0'; i++)
 {
 while (*(needle) != '\0')
 {
-if (haystack[i] == needle[0])
+if (haystack[i + j] == needle[0 + j1])
 {
 j++;
-if (haystack[i + j] == needle[j])
-{
-j++;
-}
 }
 else
 break;
-return (&(haystack[i]));
 }
+}
+if(j == 0)
+{
+return (&(haystack + i));
 }
 return (0);
 }
