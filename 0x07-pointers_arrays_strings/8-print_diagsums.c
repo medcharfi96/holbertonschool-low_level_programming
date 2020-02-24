@@ -18,8 +18,8 @@ diago1 = 0;
 diago2 = 0;
 for (i = 0; i < size; i++)
 {
-diago1 = diago1 + (a[(i * size) + i]);
-diago2 = diago2 + (a[(i * size) + (size - i)]);
+diago1 = diago1 + (a[(i *size) + i]);
+diago2 = diago2 + (a[(i *size) + (size - 1 - i)]);
 }
 printf("%d, %d\n", diago1, diago2);
 }
