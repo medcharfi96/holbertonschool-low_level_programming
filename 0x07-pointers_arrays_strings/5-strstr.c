@@ -14,7 +14,7 @@ int nn = 0;
 int hh = 0;
 
 while (haystack[hh])
-si++;
+hh++;
 while (needle[nn])
 nn++;
 if (*needle == '\0')
