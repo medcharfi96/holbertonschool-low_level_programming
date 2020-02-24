@@ -13,7 +13,7 @@ int j;
 
 i = 0;
 j = 0;
-for ( i = 0; *(haystack + i) != '\0'; i++)
+for ( i = 0; haystack[i] != '\0'; i++)
 {
 while (*(needle) != '\0')
 {
@@ -22,13 +22,13 @@ if (haystack[i] == needle[0])
 j++;
 if (haystack[i + j] == needle[j])
 {
-j++
+j++;
+}
 }
 else 
 break;
-return (haystack[i]) 
+return (&(haystack[i])); 
 }
-} 
 }
 return(0);
 }
