@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *strchr - check the code for Holberton School students.
+ * *_strchr - byte only from ather char.
  * @s: char
  * @c: char
  * Return: char.
@@ -13,11 +13,12 @@ int i;
 i = 0;
 while (*(s + i) != '\0')
 {
-if (s[i] != c)
+if (s[i] == c)
 {
 i++;
+return (s + i);
 }
-else
-return (*(s + i));
+}
 i++;
+return ( s + i);
 }
