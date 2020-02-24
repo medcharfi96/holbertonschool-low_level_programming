@@ -21,5 +21,5 @@ for (i = 0; i < size; i++)
 diago1 = diago1 + (a[(i * size) + i]);
 diago2 = diago2 + (a[(i * size) + (size - i)]);
 }
-printf("%d, %d", diago1, diago2);
+printf("%d, %d\n", diago1, diago2);
 }
