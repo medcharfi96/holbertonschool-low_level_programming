@@ -30,7 +30,6 @@ if (n == 0)
 return (0);
 }
 else
-y++;
-x = rec_num(y, n);
+x = rec_num(1, n);
 return (x);
 }
