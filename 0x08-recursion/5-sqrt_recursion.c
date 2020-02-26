@@ -14,11 +14,11 @@ if (y * y > n)
 return (-1);
 else
 y++;
-return(rec_num(y, n));
+return (rec_num(y, n));
 }
 /**
 *_sqrt_recursion - racine carre
-* @n : int
+* @n: int
 * Return: int
 */
 int _sqrt_recursion(int n)
