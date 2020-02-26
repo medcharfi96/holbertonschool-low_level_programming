@@ -11,7 +11,7 @@ int res;
 res = 0;
 if (n >= 1)
 {
-res = (factorial(n) * n);
+res = (factorial(n - 1) * n);
 return (res);
 }
 if (n == 0)
