@@ -14,7 +14,7 @@ if (n >= 1)
 res = (factorial(n - 1) * n);
 return (res);
 }
-if (n == 0)
+if (n == 0 || n == 1)
 {
 return (1);
 }
