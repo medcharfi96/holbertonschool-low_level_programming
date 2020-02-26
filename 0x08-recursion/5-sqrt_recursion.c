@@ -2,6 +2,7 @@
 /**
 * rec_num - calcule racine
 * @y : int
+* @n: int
 * Return: int (mean true).
 */
 int rec_num(int y, int n)
