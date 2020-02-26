@@ -14,7 +14,7 @@ if (y * y > n)
 return (-1);
 else
 y++;
-rec_num(y, n);
+return(rec_num(y, n));
 }
 /**
 *_sqrt_recursion - racine carre
@@ -23,7 +23,7 @@ rec_num(y, n);
 */
 int _sqrt_recursion(int n)
 {
-int x, y;
+int x;
 
 if (n == 0)
 {
