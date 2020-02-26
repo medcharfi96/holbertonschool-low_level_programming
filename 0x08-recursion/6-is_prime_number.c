@@ -17,10 +17,9 @@ else if (comp >= n)
 return (1);
 }
 if (n % comp != 0)
-{
-comp++;
-return (premier(comp, n));
-}
+return (premier(comp + 1, n));
+else
+return (0);
 }
 /**
  * is_prime_number - check the code.
