@@ -4,7 +4,7 @@
 * @y : int
 * Return: int (mean true).
 */
-int rec_num(int y)
+int rec_num(int y, int n)
 {
 if (y * y == n)
 {
@@ -14,7 +14,7 @@ if (y * y > n)
 return (-1);
 else
 y++;
-rec_num(y);
+rec_num(y, n);
 }
 /**
 *_sqrt_recursion - racine carre
@@ -25,15 +25,12 @@ int _sqrt_recursion(int n)
 {
 int x, y;
 
-if (y *y == n)
+if (n == 0)
 {
-return (y);
+return (0);
 }
-if (y *y > n)
-return (-1);
 else
 y++;
-rec_num(y);
-x = rec_num(0);
+x = rec_num(y, n);
 return (x);
 }
