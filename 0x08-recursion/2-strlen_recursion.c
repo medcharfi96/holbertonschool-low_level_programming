@@ -15,6 +15,6 @@ if (*s == '\0')
 return (0);
 }
 i++;
-i = _strlen_recursion(s) + 1;
+i = _strlen_recursion(s + 1) + 1;
 return (i);
 }
