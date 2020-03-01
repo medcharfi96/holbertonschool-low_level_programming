@@ -10,7 +10,7 @@ int main(int argc __attribute__((unused)), char const *argv[])
 int i;
 
 i = 0;
-while(argv[i] != '\0')
+while (argv[i] != '\0')
 {
 printf("%s\n", argv[i]);
 i++;
