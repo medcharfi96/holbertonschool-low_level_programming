@@ -22,9 +22,8 @@ break;
 }
 else
 {
-res = res + atoi(*argv[i]);
+res = res + atoi(argv[i]);
 }
-i++;
 }
 printf("%d\n", res);
 return (0);
