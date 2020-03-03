@@ -15,7 +15,7 @@ if (grid != NULL && height != 0)
 while(count < height)
 {
 free(grid[count]);
-free(grid);
 }
+free(grid);
 }
 }
