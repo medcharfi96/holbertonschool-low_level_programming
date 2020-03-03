@@ -13,13 +13,19 @@ char *final;
 
 ls1 = 0;
 ls2 = 0;
+if (s1 != '\0')
+{
 while (s1[ls1] != '\0')
 {
 ls1++;
 }
+}
+if (s2 != '\0')
+{
 while (s2[ls2] != '\0')
 {
 ls2++;
+}
 }
 final = malloc(sizeof(char) * (ls1 + ls2 + 1));
 if (final == NULL)
@@ -32,6 +38,6 @@ for (j = 0; j < ls2; j++)
 {
 final[i + j] = s2[j];
 }
-final[ls1 + ls2 - 1] = '\0';
+final[ls1 + ls2] = '\0';
 return (final);
 }
