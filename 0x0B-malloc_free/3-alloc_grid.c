@@ -16,7 +16,7 @@ if (height > 0 && width > 0)
 tab = malloc(height * sizeof(int));
 if (tab == NULL)
 {
-reeturn (NULL);
+return (NULL);
 }
 else
 {
