@@ -32,6 +32,6 @@ for (j = 0; j < ls2; j++)
 {
 final[i + j] = s2[j];
 }
-final[ls1 + ls2] = '\0';
+final[ls1 + ls2 - 1] = '\0';
 return (final);
 }
