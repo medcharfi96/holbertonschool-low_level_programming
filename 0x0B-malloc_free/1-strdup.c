@@ -20,10 +20,12 @@ while (str[i] != '\0')
 {
 i++;
 }
+i++;
 c = malloc(sizeof(char) * i);
-for (count = 0; count <= i; count++)
+for (count = 0; count < i; count++)
 {
 c[count] = str[count];
 }
+c[i] = '\0';
 return (c);
 }
