@@ -22,6 +22,10 @@ i++;
 }
 i++;
 c = malloc(sizeof(char) * i);
+if (c == NULL)
+{
+return (NULL);
+}
 for (count = 0; count < i; count++)
 {
 c[count] = str[count];
