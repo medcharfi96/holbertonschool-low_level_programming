@@ -18,6 +18,9 @@ if (p == '\0')
 return (NULL);
 else
 while (i < size)
-p[i] = nmemb;
+{
+p[i] = 0;
+i++;
+}
 return (p);
 }
