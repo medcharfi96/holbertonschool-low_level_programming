@@ -21,8 +21,8 @@ if (s2 != '\0')
 	while (s2[l2] != '\0')
 		l2++;
 }
-	if (n >= l2)
-		n = l2;
+	if (n > l2)
+		l2 = n;
 	ch = malloc(sizeof(char) * (l2 + l1 + 1));
 	if (ch == '\0')
 	{
@@ -39,6 +39,6 @@ i = 0;
 		ch[i + l1] = s2[i];
 		i++;
 	}
-	ch[i + l1 - 3] = '\0';
+	ch[l2 + l1 - 2] = '\0';
 	return (ch);
 }
