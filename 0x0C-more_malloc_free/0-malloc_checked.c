@@ -1,18 +1,19 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
- * malloc_checked - allocate .
- * @b : int
+ * *malloc_checked - allocate .
+ * @b : unsigned int
  * Return: 0(mean true).
  */
 void *malloc_checked(unsigned int b)
 {
-char *h;
+char *ch;
 
-h = malloc(b);
-if (h == NULL)
+ch = malloc(b);
+if (ch == NULL)
 {
 exit(98);
 }
-return (h);
+return (ch);
 }
