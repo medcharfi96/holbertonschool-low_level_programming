@@ -16,7 +16,7 @@ return (NULL);
 p = malloc(sizeof(nmemb) * size);
 if (p == '\0')
 return (NULL);
-else 
+else
 while (i < size)
 p[i] = nmemb;
 return (p);
