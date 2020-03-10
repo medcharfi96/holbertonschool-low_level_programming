@@ -3,6 +3,18 @@
 #include <stdlib.h>
 
 /**
+ * calcule - calcule de taille
+ * @ch: char
+ * Return: int.
+ */
+int calcule(char *ch)
+{
+int i = 0;
+while (ch[i] != '\0')
+i++;
+return (i);
+}
+/*
  * new_dog - create new dog
  * @name : int
  * @age : int
@@ -17,8 +29,8 @@ int lname = 0, lowner = 0, i = 0;
 dog_t *d = malloc(sizeof(dog_t));
 if (d != '\0')
 {
-lname = calcule(*name);
-lowner = calcule(*owner);
+lname = calcule(name);
+lowner = calcule(owner);
 d->name = malloc(sizeof(char) * lname);
 if (d -> name == '\0')
 {
@@ -31,6 +43,7 @@ if(d->owner == NULL)
 free(d);
 return (NULL);
 }
+d->age = age;
 while (i <= lname)
 {
 d->name[i] = name[i];
@@ -46,15 +59,4 @@ return (d);
 }
 else
 return (NULL);
-/**
- * calcule - calcule de taille
- * @ch: char
- * Return: int.
- */
-int calcule(char *ch)
-{
-int i = 0;
-while (ch[i] != '\0')
-i++;
-return (i);
 }
