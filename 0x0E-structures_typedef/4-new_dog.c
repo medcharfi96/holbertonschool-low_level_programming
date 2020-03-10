@@ -13,7 +13,7 @@ while (ch[i] != '\0')
 i++;
 return (i);
 }
-/*
+/**
  * new_dog - create new dog
  * @name : int
  * @age : int
