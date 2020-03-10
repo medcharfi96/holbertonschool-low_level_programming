@@ -32,13 +32,13 @@ if (d != '\0')
 lname = calcule(name);
 lowner = calcule(owner);
 d->name = malloc(sizeof(char) * lname);
-if (d -> name == '\0')
+if (d->name == '\0')
 {
 free(d);
 return (NULL);
 }
 d->owner = malloc(sizeof(char) * lowner);
-if(d->owner == NULL)
+if (d->owner == NULL)
 {
 free(d);
 return (NULL);
