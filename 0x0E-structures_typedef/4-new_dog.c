@@ -40,6 +40,7 @@ return (NULL);
 d->owner = malloc(sizeof(char) * lowner);
 if (d->owner == NULL)
 {
+free(d->name);
 free(d);
 return (NULL);
 }
