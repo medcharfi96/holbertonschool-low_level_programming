@@ -1,7 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * calcule - calcule de taille
  * @ch: char
@@ -21,23 +20,21 @@ return (i);
  * @owner : int
  * Return: 0(mean true)
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 int lname = 0, lowner = 0, i = 0;
-
 dog_t *d = malloc(sizeof(dog_t));
 if (d != '\0')
 {
 lname = calcule(name);
 lowner = calcule(owner);
-d->name = malloc(sizeof(char) * lname);
+d->name = malloc(sizeof(char) * lname + 1);
 if (d->name == '\0')
 {
 free(d);
 return (NULL);
 }
-d->owner = malloc(sizeof(char) * lowner);
+d->owner = malloc(sizeof(char) * lowner + 1);
 if (d->owner == NULL)
 {
 free(d->name);
