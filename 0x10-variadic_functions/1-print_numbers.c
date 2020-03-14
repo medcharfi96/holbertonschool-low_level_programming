@@ -16,11 +16,11 @@ va_start(ap, n);
 while (i < n)
 {
 printf("%d", va_arg(ap, unsigned int));
-if ( a == '\0')
+if (a == '\0')
 i++;
 else
 {
-printf("%s",separator);
+printf("%s", separator);
 i++;
 }
 }
