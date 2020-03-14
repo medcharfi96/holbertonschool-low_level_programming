@@ -14,7 +14,7 @@ unsigned int i = 0;
 if (n == 0)
 return (0);
 va_start(ap, n);
-while (i <= n)
+while (i < n)
 {
 somme += va_arg(ap, unsigned int);
 i++;
