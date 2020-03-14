@@ -18,8 +18,9 @@ while (i < n)
 printf("%d", va_arg(ap, unsigned int));
 if (a == '\0')
 i++;
-else
+else if (separator != NULL)
 {
+if ( i < n - 1)
 printf("%s", separator);
 i++;
 }
