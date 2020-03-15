@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 va_list al;
 int i = 0;
-char *sup = ", ", *s;
+char *sup = ", ", *s ="";
 va_start(al, format);
 while ((format != NULL) && (format[i] != '\0'))
 {
