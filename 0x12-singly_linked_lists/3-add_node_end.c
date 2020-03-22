@@ -16,7 +16,7 @@ int i = 0;
 
 if (nouveau == NULL)
 {
-return(NULL);
+return (NULL);
 }
 nouveau->next = NULL;
 if (str != NULL)
@@ -36,7 +36,7 @@ if (tmp == NULL)
 }
 else
 {
-while(tmp->next != NULL)
+while (tmp->next != NULL)
 {
 tmp = tmp->next;
 }
