@@ -9,8 +9,8 @@ size_t list_len(const list_t *h)
 {
 size_t len = 0;
 
-if (h->next == NULL)
-len++;
+if (h == NULL)
+len = 0;
 else
 {
 len++;
