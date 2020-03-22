@@ -1,3 +1,4 @@
+Section     .text
 global      main
 
 main:
