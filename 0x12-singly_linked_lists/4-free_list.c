@@ -5,7 +5,6 @@
 /**
  * free_list - free
  * @head: list
- *
  * Return: nothing(mean true)
  */
 void free_list(list_t *head)
