@@ -7,7 +7,7 @@
 */
 size_t list_len(const list_t *h)
 {
-size_t len = 0; 
+size_t len = 0;
 
 if (h->next == NULL)
 len += 1;
