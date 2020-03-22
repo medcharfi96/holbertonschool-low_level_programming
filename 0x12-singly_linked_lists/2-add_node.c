@@ -11,8 +11,9 @@
 list_t *add_node(list_t **head, const char *str)
 {
 list_t *nouveau = malloc(sizeof(list_t));
-unsigned int count = 0;
-int i = 0;
+size_t count = 0;
+unsigned int i = 0;
+
 if (nouveau == NULL)
 {
 return (NULL);
@@ -23,7 +24,7 @@ if (str == NULL)
 return (NULL);
 else
 {
-while (nouveau->str[i] != '\0')
+while (str[i] != '\0')
 {
 count++;
 i++;
