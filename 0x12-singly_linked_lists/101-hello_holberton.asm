@@ -1,15 +1,15 @@
-section .data
-fmt     db "%s",10,0
-msg1    db "Hello, Holberton",0
-
-    section .text
-    extern printf
-    global main
+global      main
 
 main:
-    mov  edi, msg1
-    mov  eax, 0     ; no f.p. args
-    call printf
-    mov eax, 0
-ret
+    mov     edx,17
+    mov     ebx,1
+    mov     ecx,msg
+    mov     eax,4
+    int     0x80
 
+    mov     eax,1
+    int     0x80
+
+section     .data
+
+msg     db  'Hello, Holberton',10
