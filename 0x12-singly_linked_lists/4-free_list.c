@@ -8,10 +8,9 @@
  *
  * Return: nothing(mean true)
  */
-
 void free_list(list_t *head)
 {
-list_t *l = head;
+list_t *l;
 
 while ((l = head) != NULL)
 {
