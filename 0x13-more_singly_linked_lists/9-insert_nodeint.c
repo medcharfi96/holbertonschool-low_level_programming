@@ -20,7 +20,9 @@ tmp = *head;
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
-if (tmp != NULL)
+if (tmp == NULL)
+return (NULL);
+else
 {
 if (head == NULL)
 return (NULL);
@@ -43,6 +45,4 @@ new->next = tmp->next;
 tmp->next = new;
 return (new);
 }
-else 
-return (NULL);
 }
