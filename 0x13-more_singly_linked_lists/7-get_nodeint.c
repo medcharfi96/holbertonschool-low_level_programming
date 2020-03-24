@@ -7,7 +7,7 @@
 * get_nodeint_at_index - print the inod choosen
 * @head: struct
 * @index: int
-* Return: int(mean true)
+* Return: listint_t(mean true)
 */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
