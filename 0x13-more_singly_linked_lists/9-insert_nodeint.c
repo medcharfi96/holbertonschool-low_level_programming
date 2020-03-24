@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 
 /**
@@ -20,9 +19,7 @@ tmp = *head;
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
-if (tmp == NULL)
-return (NULL);
-else
+if (tmp != NULL)
 {
 if (head == NULL)
 return (NULL);
@@ -45,4 +42,6 @@ new->next = tmp->next;
 tmp->next = new;
 return (new);
 }
+else
+return (NULL);
 }
