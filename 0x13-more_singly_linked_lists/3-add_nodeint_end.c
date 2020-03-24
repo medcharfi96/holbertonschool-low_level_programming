@@ -3,7 +3,7 @@
 /**
  * add_nodeint_end - add at the end of list
  * @head: struct
- * @str: string
+ * @n: int
  * Return: struct(mean true)
  */
 
