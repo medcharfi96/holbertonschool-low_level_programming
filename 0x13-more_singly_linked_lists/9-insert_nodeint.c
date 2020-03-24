@@ -14,6 +14,9 @@ unsigned int i = 0;
 listint_t *new;
 listint_t *tmp;
 tmp = *head;
+new = malloc(sizeof(listint_t));
+if (new == NULL)
+return (NULL);
 if (tmp != NULL)
 {
 if (head == NULL)
@@ -26,15 +29,12 @@ return (new);
 }
 else
 {
-while(i - 1 < idx)
+while(i < idx - 1)
 {
 tmp = tmp->next;
 i++;
 }
 }
-new = malloc(sizeof(listint_t));
-if (new == NULL)
-return (NULL);
 new->n = n;
 new->next = tmp->next;
 tmp->next = new;
