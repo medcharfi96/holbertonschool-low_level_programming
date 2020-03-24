@@ -8,17 +8,19 @@
  * @index: int
  * Return: int(mean true)
 */
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 unsigned int i = 0;
 listint_t *tmp, *prov = NULL;
 
 tmp = *head;
-if (head ==NULL)
+if (head == NULL)
 return (-1);
-if (index ==0)
+if (index == 0)
 {
 *head = tmp->next;
+free(tmp);
 return (1);
 }
 if (index != 0)
@@ -27,11 +29,11 @@ while (tmp != NULL)
 {
 i++;
 tmp = tmp->next;
-prov= tmp;
+prov = tmp;
 if (i == index)
 {
-prov ->next = tmp->next;
-return(1);
+prov->next = tmp->next;
+return (1);
 }
 }
 }
