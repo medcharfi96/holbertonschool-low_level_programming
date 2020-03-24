@@ -16,13 +16,14 @@ unsigned int i = 0;
 listint_t *new;
 listint_t *tmp;
 tmp = *head;
+if (head == NULL)
+return (NULL);
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
+
 if (tmp != NULL)
 {
-if (head == NULL)
-return (NULL);
 if (idx == 0)
 {
 new->next = *head;
@@ -31,7 +32,7 @@ return (new);
 }
 else
 {
-while(i < idx - 1)
+while (i < idx - 1)
 {
 tmp = tmp->next;
 i++;
