@@ -18,7 +18,7 @@ return ('\0');
 while (h)
 {
 x = h->n;
-printf("%d\n",x);
+printf("%d\n", x);
 h = h->next;
 count++;
 }
