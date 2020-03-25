@@ -21,6 +21,7 @@ if (new == NULL)
 return (NULL);
 if (head == NULL && idx != 0)
 return (NULL);
+new->n = n;
 if (idx == 0)
 {
 new->next = *head;
@@ -43,7 +44,6 @@ while (i < idx - 1)
 tmp = tmp->next;
 i++;
 }
-new->n = n;
 new->next = tmp->next;
 tmp->next = new;
 return (new);
