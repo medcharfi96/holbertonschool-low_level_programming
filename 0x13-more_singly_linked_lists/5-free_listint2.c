@@ -20,5 +20,5 @@ free(l);
 *head = NULL ;
 }
 else
-return ( NULL);
+return;
 }
