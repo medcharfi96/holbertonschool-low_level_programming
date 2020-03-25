@@ -16,9 +16,8 @@ unsigned int i = 0;
 listint_t *new;
 listint_t *tmp;
 tmp = *head;
-if (head == NULL)
-return (NULL);
-new = malloc(sizeof(listint_t));
+
+new = (listint_t *)malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
 
