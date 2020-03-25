@@ -17,7 +17,7 @@ l = *head;
 *head = (*head)->next;
 free(l);
 }
-*head = NULL ;
+*head = NULL;
 }
 else
 return;
