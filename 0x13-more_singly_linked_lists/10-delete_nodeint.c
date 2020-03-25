@@ -23,20 +23,24 @@ if (index == 0)
 free(tmp);
 return (1);
 }
-if (index != 0)
-{
 while (tmp != NULL)
 {
 i++;
 tmp = tmp->next;
-prov = tmp;
-if (i == index)
+}
+if (index < i)
 {
-prov->next = tmp->next;
-return (1);
+i = 0;
+while (i < index -1)
+{
+i++;
+tmp = tmp->next;
+prov = tmp;
 }
+prov ->next = tmp->next;
+free(tmp);
+return(1);
 }
-}
+else 
 return (-1);
 }
-
