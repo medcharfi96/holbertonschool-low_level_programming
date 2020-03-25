@@ -15,7 +15,7 @@ unsigned int i = 0, x = 0;
 listint_t *tmp, *prov = NULL;
 
 tmp = *head;
-if ((*head) == NULL)
+if (*head == NULL)
 return (-1);
 if (index == 0)
 {
@@ -25,8 +25,8 @@ return (1);
 }
 while (tmp != NULL)
 {
-i++;
 tmp = tmp->next;
+i++;
 }
 if (index > i)
 return (-1);
