@@ -30,7 +30,7 @@ i++;
 }
 if (index > i)
 return (-1);
-
+tmp = *head;
 while (x < index)
 {
 x++;
