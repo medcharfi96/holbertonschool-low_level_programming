@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - print the element of the list
+ * print_listint - print the element of the list
  * @h: list
  * Return: size_t(mean true)
 */
