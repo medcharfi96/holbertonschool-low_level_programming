@@ -3,7 +3,7 @@
 /**
  * get_bit - give the val of bit
  * @index: int
- * @index: int
+ * @n: long int
  * Return: int(mean true)
  */
 int get_bit(unsigned long int n, unsigned int index)
