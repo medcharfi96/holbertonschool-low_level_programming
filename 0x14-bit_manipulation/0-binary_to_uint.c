@@ -1,10 +1,8 @@
 #include "holberton.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * binary_to_uint - from bin ton int
- * @b: char 
+ * @b: char
  * Return: int(mean true)
  */
 
