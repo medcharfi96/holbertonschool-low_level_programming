@@ -10,7 +10,7 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-unsigned int x =(sizeof(n) * 7) + 5, test = 0;
+unsigned int x = (sizeof(n) * 7) + 5, test = 0;
 
 if (index < x)
 {
@@ -19,4 +19,4 @@ test = 1 << index;
 return (1);
 }
 return (-1);
-} 
+}
