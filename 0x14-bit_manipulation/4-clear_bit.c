@@ -15,7 +15,7 @@ unsigned int x =(sizeof(n) * 7) + 5, test = 0;
 if (index < x)
 {
 test = 1 << index;
-*n = *n & test;
+*n = *n & ~test;
 return (1);
 }
 return (-1);
