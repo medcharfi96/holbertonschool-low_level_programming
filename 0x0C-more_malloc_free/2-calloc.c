@@ -17,7 +17,7 @@ unsigned int i = 0;
 if ((size || nmemb) == 0)
 return (NULL);
 p = malloc(nmemb * size);
-if (p == '\0')
+if (p == NULL)
 return (NULL);
 else
 while (i < (size * nmemb))
