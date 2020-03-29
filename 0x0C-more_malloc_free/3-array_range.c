@@ -20,8 +20,7 @@ if (tab == NULL)
 return (NULL);
 while (count < (max - min + 1))
 {
-tab[count] = min;
-min++;
+tab[count] = count;
 count++;
 }
 return (tab);
