@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * create_file - fonction to new file
+ * append_text_to_file - fonction to new file
  * @filename: char
  * @text_content: char
  * Return: int(meantrue)
