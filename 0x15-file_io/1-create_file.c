@@ -16,7 +16,7 @@ return (-1);
 fichier = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fichier == -1)
 return (-1);
-if(text_content != NULL)
+if (text_content != NULL)
 {
 while (text_content[count] != '\0')
 count++;

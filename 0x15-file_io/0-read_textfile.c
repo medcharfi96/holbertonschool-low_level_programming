@@ -17,7 +17,7 @@ return (0);
 op = open(filename, O_RDONLY);
 if (op == -1)
 return (0);
-buffer = malloc (sizeof(char) * letters);
+buffer = malloc(sizeof(char) * letters);
 if (buffer == NULL)
 return (0);
 a = read(op, buffer, letters);
@@ -26,7 +26,7 @@ return (0);
 b = write(STDOUT_FILENO, buffer, a);
 if (b != -1)
 {
-close (op);
+close(op);
 return (b);
 }
 return (0);
