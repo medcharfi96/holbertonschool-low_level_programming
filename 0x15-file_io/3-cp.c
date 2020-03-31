@@ -9,40 +9,40 @@
 
 void eror_test(int erreur, char *argv[])
 {
-    if (erreur == 1)
-    {
-        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[erreur]);
-        exit(98);
-    }
-    if (erreur == 2)
-    {
-        dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[erreur]);
-        exit(99);
-    }
+if (erreur == 1)
+{
+dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[erreur]);
+exit(98);
+}
+if (erreur == 2)
+{
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[erreur]);
+exit(99);
+}
 }
 
 /**
  * copier - copier
- * @lire: int
+ * @ff: int
  * @buffer: buff1
  * @ft: int
  * @argv: char
  */
 
-void copier(int lire, char *buffer, int ft,  char *argv[])
+void copier(int ff, char *buffer, int ft,  char *argv[])
 {
-int lire2, erreur, ecrire;
-while (lire > 0)
+int erreur, ecrire, lire;
+
+while ((lire = read(ff, buffer, 1024)) > 0)
 {
 ecrire = write(ft, buffer, lire);
-if (ecrire != lire)
+if (ecrire == -1)
 {
 erreur = 2;
 eror_test(erreur, argv);
 }
-lire2 = read(lire, buffer, 1024);
 }
-if (lire2 == -1)
+if (lire == -1)
 {
 erreur = 1;
 eror_test(erreur, argv);
@@ -76,7 +76,7 @@ exit(100);
 
 int main(int argc, char *argv[])
 {
-int ff, ft, lire;
+int ff, ft;
 char buffer[1024];
 
 if (argc != 3)
@@ -101,8 +101,7 @@ if (ft == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
-lire = read(ff, buffer, 1024);
-copier(lire , buffer, ft, argv);
+copier(ff, buffer, ft, argv);
 xclose(ff, ft, argv);
 return (0);
 }
