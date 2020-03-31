@@ -21,7 +21,7 @@ void eror_test(int erreur, char *argv[])
     }
 }
 
-/
+/**
  * copier - copier
  * @lire: int
  * @buffer: buff1
@@ -48,7 +48,7 @@ erreur = 1;
 eror_test(erreur, argv);
 }
 }
-/
+/**
  * close - close file
  * @ff: file to
  * @ft: file to
