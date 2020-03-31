@@ -20,9 +20,11 @@ if(text_content != NULL)
 {
 while (text_content[count] != '\0')
 count++;
+}
+else
+text_content = "";
 fichier2 = write(fichier, text_content, count);
 if (fichier2 != -1)
 return (1);
-}
 return (-1);
 }
