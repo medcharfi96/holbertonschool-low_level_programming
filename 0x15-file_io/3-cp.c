@@ -32,7 +32,7 @@ void eror_test(int erreur, char *argv[])
 void copier(int lire, char *buffer, int ft,  char *argv[])
 {
 int lire2, erreur, ecrire;
-while (lire != -1)
+while (lire > 0)
 {
 ecrire = write(ft, buffer, lire);
 if (ecrire != lire)
@@ -54,7 +54,7 @@ eror_test(erreur, argv);
  * @ft: file to
  * Return: nothing
  */
-void xclose(int ff, int ft,char *argv[])
+void xclose(int ff, int ft, char *argv[])
 {
 if (close(ff) == -1)
 {
@@ -67,7 +67,7 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
 exit(100);
 }
 }
-/
+/*
  * main - function main
  * @argc: int
  * @argv: char
