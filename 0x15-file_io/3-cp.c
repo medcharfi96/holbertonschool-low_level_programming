@@ -52,7 +52,7 @@ eror_test(erreur, argv);
  * xclose - close file
  * @ff: file to
  * @ft: file to
- * @argv: array  
+ * @argv: array
  * Return: nothing
  */
 void xclose(int ff, int ft, char *argv[])
