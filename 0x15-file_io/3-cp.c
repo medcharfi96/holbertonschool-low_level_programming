@@ -49,9 +49,10 @@ eror_test(erreur, argv);
 }
 }
 /**
- * close - close file
+ * xclose - close file
  * @ff: file to
  * @ft: file to
+ * @argv: array  
  * Return: nothing
  */
 void xclose(int ff, int ft, char *argv[])
@@ -67,7 +68,8 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
 exit(100);
 }
 }
-/*
+
+/**
  * main - function main
  * @argc: int
  * @argv: char
