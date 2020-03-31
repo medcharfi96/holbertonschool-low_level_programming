@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * eror_test - test
  * @erreur: int
@@ -9,18 +9,19 @@
 
 void eror_test(int erreur, char *argv[])
 {
-if (erreur == 1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[erreur]);
-exit(98);
-}
-if (erreur == 2)
-{
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-exit(99);
+    if (erreur == 1)
+    {
+        dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[erreur]);
+        exit(98);
+    }
+    if (erreur == 2)
+    {
+        dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[erreur]);
+        exit(99);
+    }
 }
 
-/**
+/
  * copier - copier
  * @lire: int
  * @buffer: buff1
@@ -37,25 +38,25 @@ ecrire = write(ft, buffer, lire);
 if (ecrire != lire)
 {
 erreur = 2;
-eror_test(erreur, char *argv[]);
+eror_test(erreur, argv);
 }
 lire2 = read(lire, buffer, 1024);
 }
-if (lire == -1)
+if (lire2 == -1)
 {
-erreur == 1;
-eror_test(erreur, char *argv[]);
+erreur = 1;
+eror_test(erreur, argv);
 }
 }
-/**
+/
  * close - close file
  * @ff: file to
  * @ft: file to
  * Return: nothing
  */
-void close (int ff, int ft)
+void xclose(int ff, int ft,char *argv[])
 {
-if (close (ff) == -1)
+if (close(ff) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[1]);
 exit(100);
@@ -66,7 +67,7 @@ dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", argv[2]);
 exit(100);
 }
 }
-/**
+/
  * main - function main
  * @argc: int
  * @argv: char
@@ -75,7 +76,7 @@ exit(100);
 
 int main(int argc, char *argv[])
 {
-int ff, ft, lire, rd;
+int ff, ft, lire;
 char buffer[1024];
 
 if (argc != 3)
@@ -101,7 +102,7 @@ dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
 lire = read(ff, buffer, 1024);
-copier(lire , buffer, ft, *argv[]);
-close(ff, ft);
+copier(lire , buffer, ft, argv);
+xclose(ff, ft, argv);
 return (0);
 }
