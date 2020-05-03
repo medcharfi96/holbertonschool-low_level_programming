@@ -10,10 +10,6 @@ size_t dlistint_len(const dlistint_t *h)
 size_t nbr;
 
 nbr = 0;
-if (h == NULL)
-return (nbr);
-else
-{
 while (h != NULL)
 {
 h = h->next;
