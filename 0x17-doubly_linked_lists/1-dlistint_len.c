@@ -15,6 +15,5 @@ while (h != NULL)
 h = h->next;
 nbr++;
 }
-}
 return (nbr);
 }
