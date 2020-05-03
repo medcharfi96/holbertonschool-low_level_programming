@@ -13,18 +13,20 @@ unsigned int count = 0;
 
 if (head != NULL)
 {
-while (head->next != NULL)
+while (head != NULL)
 {
 if (count < index)
 {
 count++;
 head = head->next;
 }
+else if (count == index)
+return (head);
 else
 break;
 }
 }
 else
 return (NULL);
-return (head);
+return (NULL);
 }
