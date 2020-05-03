@@ -30,5 +30,5 @@ return (1);
 }
 vec = vec->next;
 }
-return (1);
+return (-1);
 }
