@@ -15,6 +15,7 @@ if (vec == NULL)
 return (-1);
 if (index == 0)
 *head = vec->next;
+return(1);
 while (vec != NULL)
 {
 i++;
@@ -29,5 +30,5 @@ return (1);
 }
 vec = vec->next;
 }
-return (-1);
+return (1);
 }
