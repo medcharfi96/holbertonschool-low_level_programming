@@ -12,8 +12,6 @@ hash_table_t *n_h_t = malloc(sizeof(hash_table_t));
 
 if (n_h_t == NULL)
 return (NULL);
-if (size <= 0)
-return (NULL);
 n_h_t->size = size;
 n_h_t->array = malloc(sizeof(hash_node_t *) * size);
 if ((n_h_t->array) == NULL)
